@@ -1,7 +1,7 @@
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Text, Button, TextInput, Alert, View, StyleSheet } from 'react-native'
 
-export default function Home() {
+export default function Contato() {
     return (
         <SafeAreaView style={styles.container}>
             <View style={{position:'absolute',top:40}}>

@@ -1,9 +1,6 @@
-import { Button } from 'react-native';
-import { StatusBar } from 'expo-status-bar';
-import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5'
-import { StyleSheet } from 'react-native';
+
 
 import Home from '../pages/Home'
 import Contato from '../pages/Contato'
