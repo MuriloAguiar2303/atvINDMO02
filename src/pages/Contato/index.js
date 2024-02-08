@@ -8,9 +8,9 @@ export default function Contato() {
                 <Text style={{fontSize:35}}>Cadastro</Text>
             </View>
             <View style={{gap:10}}>
-                <TextInput style={{ borderColor: 'red', borderWidth: 1, width: 220, }} placeholder="Nome" ></TextInput>
-                <TextInput style={{ borderColor: 'red', borderWidth: 1, width: 220, }} placeholder="CPF" ></TextInput>
-                <TextInput style={{ borderColor: 'red', borderWidth: 1, width: 220, }} placeholder="DataNascimento" ></TextInput>
+                <TextInput style={{ borderColor: 'red', borderWidth: 1, width: 220, }} placeholder="Nome"></TextInput>
+                <TextInput style={{ borderColor: 'red', borderWidth: 1, width: 220, }} placeholder="CPF"  keyboardType="numeric" ></TextInput>
+                <TextInput style={{ borderColor: 'red', borderWidth: 1, width: 220, }} placeholder="DataNascimento"  keyboardType="numeric"></TextInput>
             </View>
             <View style={{ width: 220, marginTop:150 }}>
                 <Button title="Enviar" color={'red'}
