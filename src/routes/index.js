@@ -22,17 +22,17 @@ export default function Routes() {
         
       }}>
         <Tab.Screen name='Home' component={Home} options={{title:'Inicio', headerShown: false, tabBarIcon:({color,size})=>{
-            return <FontAwesome5 name='home' color={'yellow'} size={size}></FontAwesome5>
+            return <FontAwesome5 name='home' color={'#808080'} size={size}></FontAwesome5>
         } }}>
         
         </Tab.Screen>
         <Tab.Screen name='Contato' component={Contato} options={{title:'Contato',tabBarIcon:({color,size})=>{
-            return <FontAwesome5 name='phone' color={'yellow'} size={size}></FontAwesome5>
+            return <FontAwesome5 name='phone' color={'#808080'} size={size}></FontAwesome5>
         } }}>
 
         </Tab.Screen>
         <Tab.Screen name='Cursos' component={Cursos} options={{title:'Cursos',tabBarIcon:({color,size})=>{
-            return <FontAwesome5 name='book' color={'yellow'} size={size}></FontAwesome5>
+            return <FontAwesome5 name='book' color={'#808080'} size={size}></FontAwesome5>
         } }}>
 
         </Tab.Screen>
