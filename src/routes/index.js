@@ -1,10 +1,12 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5'
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
+import StackRoutes from './StackRoutes';
 
 import Home from '../pages/Home'
 import Contato from '../pages/Contato'
-import Cursos from '../pages/Cursos'
+
 
 
 const Tab = createBottomTabNavigator();
@@ -16,7 +18,6 @@ export default function Routes() {
         tabBarInactiveTintColor: '#A9A9A9',
         tabBarInactiveBackgroundColor: 'black',
         tabBarActiveBackgroundColor:'#A9A9A9',
-        
       }}>
         <Tab.Screen name='Home' component={Home} options={{title:'Inicio', headerShown: false, tabBarIcon:({color,size})=>{
             return <FontAwesome5 name='home' color={color} size={size}></FontAwesome5>
@@ -28,7 +29,7 @@ export default function Routes() {
         } }}>
 
         </Tab.Screen>
-        <Tab.Screen name='Cursos' component={Cursos} options={{title:'Cursos',tabBarIcon:({color,size})=>{
+        <Tab.Screen name='Cursos' component={StackRoutes} options={{title:'Cursos',tabBarIcon:({color,size})=>{
             return <FontAwesome5 name='book' color={color} selectionColor={'red'} size={size}></FontAwesome5>
         } }}>
 
